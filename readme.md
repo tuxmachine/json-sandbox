@@ -8,10 +8,14 @@ JSON sandbox provides a Node REPL preloaded with some modules for some quick 'n 
 * Bluebird
 * Cheerio
 
+# Installation
+```
+$ npm install -g tuxmachine/json-sandbox
+```
 # Usage
 
 ```
-$ index.js [/path/to/data.json]
+$ json-sandbox [/path/to/data.json]
  > _.map(data, 'name');
 ```
 
