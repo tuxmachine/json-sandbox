@@ -30,7 +30,7 @@ if (require.main === module) {
         useGlobal: true
     });
     r.context.data = data;
-    r.context._ = _;
+    r.context.lo = _;
     r.context.fs = fs;
     r.context.fetch = fetch;
     r.context.cheerio = cheerio;
