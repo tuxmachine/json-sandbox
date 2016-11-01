@@ -1,6 +1,6 @@
 {
   "name": "json-sandbox",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A REPL sandbox environment to play with (JSON) data",
   "bin": {
     "json-sandbox": "./index.js"
@@ -9,7 +9,8 @@
     "bluebird": "^3.4.0",
     "cheerio": "^0.20.0",
     "lodash": "^4.13.1",
-    "node-fetch": "^1.5.3"
+    "node-fetch": "^1.5.3",
+    "xml2js": "^0.4.17"
   },
   "devDependencies": {},
   "author": "Rick Dutour Geerling",
