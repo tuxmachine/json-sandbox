@@ -1,15 +1,15 @@
 {
   "name": "json-sandbox",
-  "version": "0.0.3",
+  "version": "0.1.0",
+  "engines": { "node": ">6.0" },
   "description": "A REPL sandbox environment to play with (JSON) data",
   "bin": {
     "json-sandbox": "./index.js"
   },
   "dependencies": {
-    "bluebird": "^3.4.0",
-    "cheerio": "^0.20.0",
-    "lodash": "^4.13.1",
-    "node-fetch": "^1.5.3",
+    "cheerio": "^0.22.0",
+    "lodash": "^4.17.2",
+    "node-fetch": "^1.6.3",
     "xml2js": "^0.4.17"
   },
   "devDependencies": {},

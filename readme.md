@@ -5,7 +5,6 @@ JSON sandbox provides a Node REPL preloaded with some modules for some quick 'n 
 * fs
 * node-fetch
 * Lodash
-* Bluebird
 * Cheerio
 
 # Installation

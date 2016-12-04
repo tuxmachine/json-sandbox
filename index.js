@@ -5,7 +5,6 @@
 const repl = require('repl'),
     fs = require('fs'),
     fetch = require('node-fetch'),
-    bluebird = require('bluebird'),
     cheerio = require('cheerio'),
     xml2js = require('xml2js'),
     _ = require('lodash');
@@ -13,7 +12,7 @@ const repl = require('repl'),
 var data = {};
 
 console.log('Welcome to JSON playground');
-console.log("I've preloaded fs, lodash, bluebird, cheerio, xml2js and fetch libraries, go wild :)");
+console.log("I've preloaded fs, lodash, cheerio, xml2js and fetch libraries, go wild :)");
 if(process.argv.length > 2) {
     data = fs.readFileSync(process.argv[2]);
     try {
@@ -31,12 +30,11 @@ if (require.main === module) {
         useGlobal: true
     });
     r.context.data = data;
-    r.context.lo = _;
+    r.context._ = _;
     r.context.fs = fs;
     r.context.fetch = fetch;
     r.context.cheerio = cheerio;
     r.context.xml2js = xml2js;
-    r.context.bluebird = bluebird;
 }
 
 
